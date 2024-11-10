@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta name="author" content="willz.dev" />
+    <meta
+      name="description"
+      content="A school website for Integrity Montessori"
+    />
+    <title>Integrity Montessori</title>
+    <link rel="icon" href="assets/logo.png" type="icon" />
+    <!-- Link for swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--Link for external CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Top links for e-mail, contact and enroll button-->
+      <div class="top-links-container">
+        <ul class="top-links">
+          <li class="top-address">
+            <a href="#">P.O Box YB 432 Bremang, Kumasi</a>
+          </li>
+          <li>Call us on: <a href="tel:+233555718722">0555718722</a></li>
+          <li class="enroll-btn"><a href="#">Enroll Now</a></li>
+        </ul>
+      </div>
+      <nav>
+        <!-- Navigation links -->
+        <div class="nav-links-container">
+          <!-- School logo -->
+          <div class="logo">
+            <img src="assets/school logo.png" alt="school logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Levels</a></li>
+            <li><a href="#">Testimonails</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="assets/img1.jpg" alt="" class="image" />
+            <div class="image-data">
+              <h1>
+                INTEGRITY MONTESSORI <br />
+                SCHOOL
+              </h1>
+              <span class="text">Motto: Divine Knowledge</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/img2.jpg" alt="" class="image" />
+            <div class="image-data">
+              <h1>
+                INTEGRITY MONTESSORI <br />
+                SCHOOL
+              </h1>
+              <span class="text">Motto: Divine Knowledge</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/img3.jpg" alt="" class="image" />
+            <div class="image-data">
+              <h1>
+                INTEGRITY MONTESSORI <br />
+                SCHOOL
+              </h1>
+              <span class="text">Motto: Divine Knowledge</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
