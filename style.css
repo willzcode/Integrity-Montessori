@@ -65,6 +65,13 @@ a {
   width: 6rem;
 }
 
+header {
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
 nav {
   background-color: var(--clr-main-yellow);
   padding: 0.3rem 0;
@@ -208,7 +215,7 @@ nav {
   display: flex;
   align-items: center;
 }
- .welcome-image img {
+.welcome-image img {
   max-width: 410px;
   width: 100%;
 }
@@ -261,11 +268,11 @@ nav {
   }
 }
 
-@media(max-width: 900px){
-    .welcome {
+@media (max-width: 900px) {
+  .welcome {
     flex-wrap: wrap-reverse;
   }
-  
+
   .welcome-text {
     width: 100%;
   }
@@ -279,7 +286,7 @@ nav {
   }
 
   .welcome-text h2 {
-    text-align:center;
+    text-align: center;
     font-size: 1.5rem;
   }
 
