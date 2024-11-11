@@ -195,6 +195,41 @@ nav {
   background-color: var(--clr-main-Indigo);
 }
 
+.welcome {
+  width: 92%;
+  margin: 4rem auto;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.welcome-image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+ .welcome-image img {
+  max-width: 410px;
+  width: 100%;
+}
+
+.welcome-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.welcome-text h2 {
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+}
+
+.welcome-text p {
+  font-size: 0.95rem;
+}
+
 @media (max-width: 450px) {
   .top-links {
     font-size: 0.7rem;
@@ -230,5 +265,21 @@ nav {
 @media (max-width: 950px) {
   .nav-links {
     display: none;
+  }
+
+
+}
+
+@media (max-width: 1000px){
+  .welcome {
+    flex-wrap: wrap-reverse;
+  }
+  
+  .welcome-text {
+    width: 100%;
+  }
+
+  .welcome-text h2 {
+    text-align:center;
   }
 }
