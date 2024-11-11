@@ -197,8 +197,7 @@ nav {
 
 .welcome {
   width: 92%;
-  margin: 4rem auto;
-  border: 1px solid;
+  margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -219,7 +218,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid;
 }
 
 .welcome-text h2 {
@@ -279,8 +277,6 @@ nav {
   .welcome-image img {
     margin: 0 auto;
   }
-
-
 
   .welcome-text h2 {
     text-align:center;
