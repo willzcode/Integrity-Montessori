@@ -199,6 +199,9 @@ nav {
   .top-links {
     font-size: 0.7rem;
   }
+  .hero .image-data span.text {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 700px) {
