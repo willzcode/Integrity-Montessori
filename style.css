@@ -72,6 +72,21 @@ header {
   top: 0;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.3rem;
+  z-index: 1000;
+}
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--clr-main-Indigo);
+  transition: all 0.3s ease;
+}
+
 nav {
   background-color: var(--clr-main-yellow);
   padding: 0.3rem 0;
@@ -359,8 +374,22 @@ nav {
 }
 
 @media (max-width: 950px) {
+  .burger {
+    display: flex;
+  }
   .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-main-yellow);
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .nav-links.active {
+    display: flex;
   }
 
   .welcome-text p,
