@@ -327,8 +327,7 @@ nav {
     margin: 0 auto;
   }
 
-  .welcome-text h2,
-  .about-us h2 {
+  .welcome-text h2 {
     font-size: 1.5rem;
   }
 
@@ -341,6 +340,10 @@ nav {
     flex-wrap: wrap;
   }
 
+  .about-us h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
   .about-container p {
     width: 100%;
     font-size: 0.85rem;
