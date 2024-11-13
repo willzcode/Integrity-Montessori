@@ -204,7 +204,7 @@ nav {
 
 .welcome {
   width: 92%;
-  margin: 3rem auto;
+  margin: 4rem auto 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -218,7 +218,6 @@ nav {
 .welcome-image img {
   max-width: 410px;
   width: 100%;
-  border-radius: 10px;
 }
 
 .welcome-text {
@@ -242,6 +241,41 @@ nav {
 
 .welcome-text p {
   font-size: 0.95rem;
+}
+
+.about-us {
+  width: 92%;
+  margin: 5rem auto;
+}
+
+.about-us h2 {
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+  color: var(--clr-main-Indigo);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.about-image img {
+  max-width: 410px;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.about-container p {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 450px) {
@@ -293,12 +327,31 @@ nav {
     margin: 0 auto;
   }
 
-  .welcome-text h2 {
+  .welcome-text h2,
+  .about-us h2 {
     font-size: 1.5rem;
   }
 
-  .welcome-text p,.welcome-text span {
+  .welcome-text p,
+  .welcome-text span {
     font-size: 0.85rem;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .about-container p {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    margin: 0 auto;
   }
 }
 
@@ -307,7 +360,8 @@ nav {
     display: none;
   }
 
-  .welcome-text p {
+  .welcome-text p,
+  .about-container p {
     font-size: 0.9rem;
   }
 }
