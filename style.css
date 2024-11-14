@@ -270,23 +270,86 @@ nav {
   text-align: center;
 }
 
-.about-image img {
-  max-width: 600px;
-  width: 100%;
+.about-image {
+  width: 40%;
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about-image img {
+  max-width: 410px;
+  width: 100%;
 }
 
 .about-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .about-container p {
-  width: 80%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.levels-container {
+  margin: 0 auto;
+  width: 92%;
+  background-color: #effafe;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+.level-head {
+  margin-bottom: 4rem;
+}
+
+.level-head h2 {
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+  color: var(--clr-main-Indigo);
+  margin-bottom: 0.4rem;
   text-align: center;
+}
+
+.levels-container p {
+  font-size: 0.95rem;
+}
+
+.level-head p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.level-1 {
+  background-color: #d6f4fe;
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.level-1 h3 {
+  font-size: clamp(0.5rem, 6vw, 2rem);
+}
+
+.level-2 {
+  background-color: #f1f4ed;
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.level-2 h3 {
+  font-size: clamp(0.5rem, 6vw, 2rem);
+}
+
+.level-3 {
+  background-color: #d6f4fe;
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.level-3 h3 {
+  font-size: clamp(0.5rem, 6vw, 2rem);
 }
 
 @media (max-width: 450px) {
@@ -347,14 +410,18 @@ nav {
     font-size: 0.85rem;
   }
 
+  .about-container {
+    flex-wrap: wrap;
+  }
+
   .about-us h2 {
     margin-bottom: 0;
     font-size: 1.5rem;
   }
+
   .about-container p {
     width: 100%;
     font-size: 0.85rem;
-    text-align: start;
   }
 
   .about-image {
@@ -363,6 +430,22 @@ nav {
 
   .about-image img {
     margin: 0 auto;
+  }
+
+  .levels-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .levels-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .levels-container p {
+    font-size: 0.85rem;
+  }
+
+  .level-head p {
+    width: 100%;
   }
 }
 
