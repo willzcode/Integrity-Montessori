@@ -192,6 +192,7 @@ nav {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
 }
+
 .hero .nav-btn:hover {
   background: rgba(255, 255, 255, 0.4);
 }
@@ -380,6 +381,7 @@ nav {
 .staff-container {
   max-width: 1200px;
   width: 92%;
+  margin-bottom: 2rem;
 }
 
 .staff-container .image-container {
@@ -504,20 +506,29 @@ nav {
   bottom: -10px;
 }
 
+.mission-vision-container h2 {
+  width: 92%;
+  margin: 0 auto 0.4rem auto;
+  text-align: center;
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+}
+
+.mission-vision h3 {
+  font-size: clamp(0.5rem, 6vw, 2rem);
+  color: var(--clr-main-Indigo);
+}
+
 .mission-vision {
   width: 92%;
   margin: 1rem auto 3rem auto;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
-  background-color: #3a4b8a2a;
-  padding: 2rem 0;
+  justify-content: space-evenly;
 }
 
 .mission,
 .vision {
-  background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
   padding: 1px;
   border-radius: 1rem;
   max-width: 350px;
@@ -526,16 +537,11 @@ nav {
 .mission-card,
 .vision-card {
   font-size: 0.92rem;
-  color: #ffffff;
-  background: linear-gradient(
-    135deg,
-    var(--clr-main-Indigo) 0%,
-    #3a4b8a 43%,
-    var(--clr-main-Indigo) 100%
-  );
+  border: 2px solid var(--clr-main-Indigo);
   padding: 1.5rem;
   border-radius: 1rem;
 }
+
 @media (max-width: 450px) {
   .top-links {
     font-size: 0.7rem;
@@ -651,6 +657,14 @@ nav {
   }
   .mission-vision p {
     font-size: 0.85rem;
+  }
+
+  .mission-vision-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .mission-vision h3 {
+    font-size: 1.4rem;
   }
 }
 
