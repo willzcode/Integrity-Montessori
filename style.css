@@ -506,13 +506,6 @@ nav {
   bottom: -10px;
 }
 
-.mission-vision-container h2 {
-  width: 92%;
-  margin: 0 auto 0.4rem auto;
-  text-align: center;
-  font-size: clamp(0.5rem, 7vw, 2.5rem);
-}
-
 .mission-vision h3 {
   font-size: clamp(0.5rem, 6vw, 2rem);
   color: var(--clr-main-Indigo);
@@ -529,17 +522,12 @@ nav {
 
 .mission,
 .vision {
-  padding: 1px;
-  border-radius: 1rem;
-  max-width: 350px;
+  max-width: 500px;
 }
 
 .mission-card,
 .vision-card {
   font-size: 0.92rem;
-  border: 2px solid var(--clr-main-Indigo);
-  padding: 1.5rem;
-  border-radius: 1rem;
 }
 
 @media (max-width: 450px) {
