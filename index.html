@@ -19,10 +19,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <!-- Google Fonts Link For Icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <!--Link for external CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -333,9 +339,75 @@
           </div>
         </div>
       </section>
-      <section>
-        
+      <!-- Section for Testimonial -->
+      <section class="testimonial">
+        <div class="test-head">
+          <h2>Testimonails</h2>
+          <p>
+            Integrity Montessori School fosters academic excellence and personal
+            growth in a nurturing environment. Hear what our parents and
+            students say!
+          </p>
+        </div>
+        <div class="testimonial-container">
+          <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+              <div class="slide swiper-slide">
+                <img src="assets/img1.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aperiam, saepe provident dolorem a quaerat quo error facere
+                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
+                  asperiores doloremque deserunt eum nemo.
+                </p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                  <span class="name">Mary Owusuwaa</span>
+                  <span class="job">Eletrical Engineer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="assets/img2.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aperiam, saepe provident dolorem a quaerat quo error facere
+                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
+                  asperiores doloremque deserunt eum nemo.
+                </p>
+
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                <div class="details">
+                  <span class="name">Louis Boateng</span>
+                  <span class="job">Bank Manager</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="assets/img3.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aperiam, saepe provident dolorem a quaerat quo error facere
+                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
+                  asperiores doloremque deserunt eum nemo.
+                </p>
+
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                <div class="details">
+                  <span class="name">Stephen Mensah</span>
+                  <span class="job">Software Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
   </body>
 </html>
