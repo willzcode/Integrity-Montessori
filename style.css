@@ -394,13 +394,13 @@ nav {
 .news-events h2 {
   font-size: clamp(0.5rem, 7vw, 2.5rem);
   color: var(--clr-main-Indigo);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
   display: flex;
   justify-content: center;
 }
 
 .news-card {
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.274);
@@ -445,7 +445,12 @@ nav {
   padding: 4px 8px;
   border-radius: 4px;
 }
-
+.news-events .head-text {
+  font-size: 0.95rem;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
 .news-btn span {
   transition: 0.3s ease;
 }
@@ -573,6 +578,12 @@ nav {
 
   .news-events h2 {
     font-size: 1.8rem;
+  }
+
+  .news-events .head-text {
+    font-size: 0.85rem;
+    text-align: start;
+    width: 92%;
   }
 }
 
