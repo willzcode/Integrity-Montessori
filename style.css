@@ -476,14 +476,8 @@ nav {
 .test-head h2 {
   font-size: clamp(0.5rem, 7vw, 2.5rem);
   color: var(--clr-main-Indigo);
-  margin-bottom: 0.4rem;
   display: flex;
   justify-content: center;
-}
-
-.test-head p {
-  font-size: 0.95rem;
-  text-align: center;
 }
 
 .testimonial-container {
@@ -518,6 +512,7 @@ nav {
   row-gap: 30px;
   width: 100%;
 }
+
 .testimonial-container .slide p {
   text-align: center;
   padding: 0 160px;
@@ -570,6 +565,45 @@ nav {
 
 .testimonial-container .swiper-pagination-bullet-active {
   background-color: #4070f4;
+}
+
+.enroll {
+  background-color: #2563eb;
+}
+
+.enroll-container {
+  width: 92%;
+  margin: 0rem auto 3rem auto;
+  padding: 2rem 1rem;
+}
+
+.enroll-container p {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto 2rem auto;
+}
+
+.enroll-container a {
+  padding: 0.4rem 1.4rem;
+  background-color: #fff;
+  color: #2563eb;
+  font-size: 0.85rem;
+  margin: 0 auto;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 2px solid #fff;
+}
+
+.enroll-container a:hover {
+  background-color: #00000000;
+  color: #fff;
+}
+
+.enroll-cta {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 450px) {
@@ -708,9 +742,9 @@ nav {
     font-size: 1.8rem;
   }
 
-  .test-head p {
+  .enroll-container p {
     font-size: 0.85rem;
-    text-align: start;
+    width: 98%;
   }
 }
 
