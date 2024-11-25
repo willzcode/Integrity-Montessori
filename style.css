@@ -451,11 +451,10 @@ nav {
   margin: 0 auto 1rem auto;
   text-align: center;
 }
-.news-btn span {
-  transition: 0.3s ease;
-}
 
 .news-btn span {
+  display: flex;
+  align-items: center;
   transform: translateX(4px);
 }
 
@@ -492,7 +491,7 @@ nav {
   position: relative;
   max-width: 900px;
   width: 98%;
-  padding: 50px 0;
+  padding: 30px 0;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -573,7 +572,7 @@ nav {
 
 .enroll-container {
   width: 92%;
-  margin: 0rem auto 3rem auto;
+  margin: 0rem auto 2rem auto;
   padding: 2rem 1rem;
 }
 
@@ -604,6 +603,75 @@ nav {
 .enroll-cta {
   display: flex;
   justify-content: center;
+}
+
+.gallery-head {
+  margin: 1rem auto 2rem auto;
+  width: 92%;
+}
+
+.gallery-head h2 {
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+  color: var(--clr-main-Indigo);
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-head p {
+  font-size: 0.95rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gallery .image {
+  width: fit-content;
+}
+
+.gallery .image span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery .image img {
+  width: 350px;
+  max-width: 350px;
+  height: 400px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.gallery .image:hover img {
+  transform: scale(1.1);
+}
+
+.more-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.more-btn a {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 1rem;
 }
 
 @media (max-width: 450px) {
@@ -650,6 +718,10 @@ nav {
   .testimonial-container .nav-btn::after,
   .testimonial-container .nav-btn::before {
     font-size: 15px;
+  }
+
+  .gallery .image {
+    width: 100%;
   }
 }
 
@@ -746,6 +818,15 @@ nav {
     font-size: 0.85rem;
     width: 98%;
   }
+
+  .gallery-head h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-head p {
+    font-size: 0.85rem;
+    width: 100%;
+  }
 }
 
 @media (max-width: 950px) {
@@ -770,5 +851,10 @@ nav {
   .welcome-text p,
   .about-container p {
     font-size: 0.9rem;
+  }
+
+  .gallery .image {
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
