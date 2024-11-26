@@ -104,3 +104,57 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+const slides = document.querySelectorAll(".slides img");
+const bars = document.querySelectorAll(".bar");
+
+let currentIndex = 0;
+const slideDuration = 3500; // 5 seconds for each slide
+let interval;
+
+function updateSlider(index) {
+  // Update active image
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+
+  // Reset all progress bars
+  bars.forEach((bar, i) => {
+    const progressBar = bar.querySelector(".progress");
+    progressBar.style.width = i === index ? "100%" : "0";
+    progressBar.style.transition =
+      i === index ? `width ${slideDuration}ms linear` : "none";
+  });
+}
+
+function startSlider() {
+  interval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider(currentIndex);
+  }, slideDuration);
+}
+
+function stopSlider() {
+  clearInterval(interval);
+}
+
+// Add click events to progress bars for manual navigation
+bars.forEach((bar, i) => {
+  bar.addEventListener("click", () => {
+    stopSlider();
+    currentIndex = i;
+    updateSlider(currentIndex);
+    startSlider();
+  });
+});
+
+// Add progress divs to bars dynamically
+bars.forEach((bar) => {
+  const progressDiv = document.createElement("div");
+  progressDiv.classList.add("progress");
+  bar.appendChild(progressDiv);
+});
+
+// Initialize slider
+updateSlider(currentIndex);
+startSlider();

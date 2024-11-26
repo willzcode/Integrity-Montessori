@@ -16,9 +16,9 @@
   --clr-main-black: #030303;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -606,7 +606,7 @@ nav {
 }
 
 .gallery-head {
-  margin: 1rem auto 2rem auto;
+  margin: 2rem auto;
   width: 92%;
 }
 
@@ -620,58 +620,71 @@ nav {
 .gallery-head p {
   font-size: 0.95rem;
   text-align: center;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
-.gallery-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.slider {
   width: 92%;
-  margin: 0 auto;
+  max-width: 650px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 2rem auto;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.gallery .image {
-  width: fit-content;
-}
-
-.gallery .image span {
-  display: flex;
+.slides img {
   width: 100%;
+  display: none;
+}
+
+.slides img.active {
+  display: block;
+}
+
+.progress-bars {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bar {
+  flex: 1;
+  height: 3px;
+  margin: 3px 5px;
+  border-radius: 20px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: relative;
   overflow: hidden;
 }
 
-.gallery .image img {
-  width: 350px;
-  max-width: 350px;
-  height: 400px;
-  vertical-align: middle;
-  transition: all 0.3s ease;
+.bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  transition: width 3s linear;
 }
 
-.gallery .image:hover img {
-  transform: scale(1.1);
+.bar {
+  position: relative;
+  background-color: #ddd;
+  overflow: hidden;
 }
 
-.more-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.more-btn a {
-  padding: 8px 16px;
-  background-color: #2563eb;
-  color: #fff;
-  font-size: 0.9rem;
-  margin: 1rem;
+.bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  transition: width linear;
 }
 
 @media (max-width: 450px) {
@@ -718,10 +731,6 @@ nav {
   .testimonial-container .nav-btn::after,
   .testimonial-container .nav-btn::before {
     font-size: 15px;
-  }
-
-  .gallery .image {
-    width: 100%;
   }
 }
 
@@ -851,10 +860,5 @@ nav {
   .welcome-text p,
   .about-container p {
     font-size: 0.9rem;
-  }
-
-  .gallery .image {
-    max-width: 350px;
-    margin: 0 auto;
   }
 }

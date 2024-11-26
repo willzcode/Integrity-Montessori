@@ -37,6 +37,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="swiper-bundle.min.js" defer></script>
     <!-- External JavaScript -->
     <script src="script.js" defer></script>
   </head>
@@ -67,11 +68,11 @@
           </div>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href=".about-us">About Us</a></li>
-            <li><a href=".levels">Levels</a></li>
-            <li><a href=".testimonial">Testimonails</a></li>
-            <li><a href=".news-events">News & Events</a></li>
-            <li><a href=".school-gallery">Gallery</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#levels">Levels</a></li>
+            <li><a href="#testimonial">Testimonails</a></li>
+            <li><a href="#news-events">News & Events</a></li>
+            <li><a href="#school-gallery">Gallery</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
           <!-- Burger icon for mobile -->
@@ -174,7 +175,7 @@
         </div>
       </section>
       <!-- About section of the page -->
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h2>About the School</h2>
         <div class="about-container">
           <p>
@@ -219,7 +220,7 @@
           </div>
         </div>
       </section>
-      <section class="levels">
+      <section class="levels" id="levels">
         <div class="levels-container">
           <div class="level-head">
             <h2>Outstanding Curricular Offerings</h2>
@@ -266,7 +267,7 @@
         </div>
       </section>
       <!-- Section for News and Events -->
-      <section class="news-events">
+      <section class="news-events" id="news-events">
         <h2>News & Events</h2>
         <p class="head-text">
           Stay connected with Integrity Montessori School. Explore our latest
@@ -340,7 +341,7 @@
         </div>
       </section>
       <!-- Section for Testimonial -->
-      <section class="testimonial">
+      <section class="testimonial" id="testimonial">
         <div class="test-head">
           <h2>Testimonials</h2>
         </div>
@@ -418,7 +419,7 @@
           </div>
         </div>
       </section>
-      <section class="school-gallery">
+      <section class="school-gallery" id="school-gallery">
         <div class="gallery-head">
           <h2>Gallery</h2>
           <p>
@@ -427,36 +428,39 @@
             achievements.
           </p>
         </div>
-        <div class="gallery-container">
-          <div class="gallery-wrapper">
-            <div class="gallery">
-              <div class="image">
-                <span><img src="assets/gallery-1.jpg" alt="" /></span>
-              </div>
-              <div class="image">
-                <span><img src="assets/gallery-2.jpg" alt="" /></span>
-              </div>
-              <div class="image">
-                <span><img src="assets/gallery-3.jpg" alt="" /></span>
-              </div>
-              <div class="image">
-                <span><img src="assets/gallery-4.jpg" alt="" /></span>
-              </div>
-              <div class="image">
-                <span><img src="assets/gallery-5.jpg" alt="" /></span>
-              </div>
-              <div class="image">
-                <span><img src="assets/gallery-6.jpg" alt="" /></span>
-              </div>
-            </div>
+        <div class="slider">
+          <div class="progress-bars">
+            <div class="bar" data-index="0"></div>
+            <div class="bar" data-index="1"></div>
+            <div class="bar" data-index="2"></div>
+            <div class="bar" data-index="3"></div>
+            <div class="bar" data-index="4"></div>
+            <div class="bar" data-index="6"></div>
+            <div class="bar" data-index="7"></div>
+            <div class="bar" data-index="8"></div>
+            <div class="bar" data-index="9"></div>
+            <div class="bar" data-index="10"></div>
+            <div class="bar" data-index="11"></div>
+            <div class="bar" data-index="12"></div>
           </div>
-        </div>
-        <div class="more-btn">
-          <a href="#">View More</a>
+          <div class="slides">
+            <img src="assets/graduation-1.JPG" alt="an image" />
+            <img src="assets/graduation-2.JPG" alt="an image" />
+            <img src="assets/graduation-3.JPG" alt="an image" />
+            <img src="assets/graduation-4.JPG" alt="an image" />
+            <img src="assets/graduation-5.JPG" alt="an image" />
+            <img src="assets/graduation-6.JPG" alt="an image" />
+            <img src="assets/fruit-day-1.jpg" alt="an image" />
+            <img src="assets/fruit-day-2.jpg" alt="an image" />
+            <img src="assets/fruit-day-3.jpg" alt="an image" />
+            <img src="assets/fruit-day-4.jpg" alt="an image" />
+            <img src="assets/fruit-day-5.jpg" alt="an image" />
+            <img src="assets/fruit-day-6.jpg" alt="an image" />
+          </div>
         </div>
       </section>
     </main>
     <!-- Swiper JS -->
-    <script src="swiper-bundle.min.js"></script>
+    
   </body>
 </html>
