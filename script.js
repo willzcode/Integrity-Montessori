@@ -109,7 +109,7 @@ const slides = document.querySelectorAll(".slides img");
 const bars = document.querySelectorAll(".bar");
 
 let currentIndex = 0;
-const slideDuration = 3500; // 5 seconds for each slide
+const slideDuration = 3500; // 3.5 seconds for each slide
 let interval;
 
 function updateSlider(index) {

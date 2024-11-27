@@ -654,7 +654,7 @@ nav {
 .bar {
   flex: 1;
   height: 3px;
-  margin: 10px 5px;
+  margin: 4px 5px;
   border-radius: 20px;
   background-color: #ddd;
   cursor: pointer;
