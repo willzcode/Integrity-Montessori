@@ -745,9 +745,11 @@ nav {
   gap: 5rem;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #effafe;
-  padding: 2rem;
-  border-radius: 10px;
+  width: fit-content;
+  border: 1px solid #221958;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 3rem auto 0 auto;
 }
 
 .contact-image img {
