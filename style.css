@@ -39,7 +39,6 @@ section.animate {
   transform: translateY(0);
 }
 
-
 a {
   text-decoration: none;
 }
@@ -253,6 +252,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .welcome-image img {
   max-width: 410px;
   width: 100%;
@@ -299,6 +299,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
 }
+
 .about-image img {
   max-width: 410px;
   width: 100%;
@@ -465,6 +466,7 @@ nav {
   padding: 4px 8px;
   border-radius: 4px;
 }
+
 .news-events .head-text {
   font-size: 0.95rem;
   width: 80%;
@@ -554,11 +556,13 @@ nav {
   font-weight: 600;
   color: #000;
 }
+
 .details .job {
   font-size: 0.7rem;
   font-weight: 400;
   color: #333;
 }
+
 .testimonial-container .nav-btn {
   height: 35px;
   width: 35px;
@@ -778,6 +782,61 @@ nav {
   border-radius: 5px;
 }
 
+footer {
+  background-color: #221958;
+  margin-top: 5rem;
+}
+
+.footer {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+footer a {
+  color: #fff;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  font-size: 0.85rem;
+  border-top: 0.5px solid #ffffffb9;
+  padding: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-end p {
+  margin: 0 auto;
+  width: 92%;
+}
+
 @media (max-width: 450px) {
   .top-links {
     font-size: 0.7rem;
@@ -796,6 +855,18 @@ nav {
     display: block;
   }
 
+  .footer {
+    align-items: flex-start;
+  }
+
+  .footer ul {
+    gap: 1rem;
+  }
+
+  .footer h3 {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 700px) {
@@ -944,12 +1015,25 @@ nav {
   .info span {
     font-size: 0.9rem;
   }
+
+  .footer a {
+    font-size: 0.85rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 950px) {
   .burger {
     display: flex;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -961,6 +1045,7 @@ nav {
     padding: 1rem;
     gap: 1.5rem;
   }
+
   .nav-links.active {
     display: flex;
   }
