@@ -746,7 +746,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   width: fit-content;
-  border: 1px solid #221958;
+  background-color: #e7f7fc;
   border-radius: 5px;
   padding: 1rem;
   margin: 3rem auto 0 auto;
@@ -770,6 +770,12 @@ nav {
   .contact-image img {
     display: none;
   }
+
+  .contact-container {
+    background-color: #fff;
+    display: block;
+  }
+
 }
 
 @media (max-width: 700px) {
