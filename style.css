@@ -687,12 +687,86 @@ nav {
   transition: width linear;
 }
 
+.contact-us {
+  width: 92%;
+  margin: 3rem auto;
+}
+
+.contact-head h2 {
+  font-size: clamp(0.5rem, 7vw, 2.5rem);
+  color: var(--clr-main-Indigo);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-head p {
+  font-size: 0.95rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info img {
+  width: 35px;
+  height: 35px;
+}
+
+.info span {
+  font-size: 0.95rem;
+  display: block;
+}
+
+.info span a {
+  color: #000;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  color: var(--clr-main-Indigo);
+}
+
+.location,
+.email,
+.call {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.icon img {
+  margin: 0.2rem 0.2rem 0 0;
+}
+
+.contact-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #effafe;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
 @media (max-width: 450px) {
   .top-links {
     font-size: 0.7rem;
   }
+
   .hero .image-data span.text {
     font-size: 0.8rem;
+  }
+
+  .contact-image img {
+    display: none;
   }
 }
 
@@ -828,13 +902,19 @@ nav {
     width: 98%;
   }
 
-  .gallery-head h2 {
+  .gallery-head h2,
+  .contact-head h2 {
     font-size: 1.8rem;
   }
 
-  .gallery-head p {
+  .gallery-head p,
+  .contact-head p {
     font-size: 0.85rem;
     width: 100%;
+  }
+
+  .info span {
+    font-size: 0.9rem;
   }
 }
 
