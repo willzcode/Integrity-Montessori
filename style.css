@@ -28,6 +28,18 @@ body {
   /* overflow-x: hidden; */
 }
 
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 a {
   text-decoration: none;
 }
