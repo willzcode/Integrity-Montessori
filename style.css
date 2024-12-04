@@ -868,10 +868,12 @@ footer img {
 
   .footer {
     align-items: flex-start;
+    justify-content: start;
   }
 
   .footer ul {
     gap: 0.8rem;
+    flex-direction: column;
   }
 
   .footer h3 {
