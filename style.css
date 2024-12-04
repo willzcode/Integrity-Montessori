@@ -795,7 +795,7 @@ footer {
   gap: 4rem;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 footer a {
@@ -869,6 +869,7 @@ footer img {
   .footer {
     align-items: flex-start;
     justify-content: start;
+    gap: 2rem;
   }
 
   .footer ul {
@@ -1038,7 +1039,8 @@ footer img {
   }
 
   .footer h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
 
