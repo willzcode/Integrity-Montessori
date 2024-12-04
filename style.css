@@ -817,6 +817,17 @@ footer h3 {
   font-size: 1.7rem;
 }
 
+footer img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.school-logo {
+  display: flex;
+  align-items: center;
+}
+
 .footer p {
   color: #fff;
   font-size: 0.95rem;
