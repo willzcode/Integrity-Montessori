@@ -23,9 +23,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-white);
-  /* max-width: 1440px;
-  margin: 0 auto; */
-  /* overflow-x: hidden; */
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {
